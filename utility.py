@@ -18,9 +18,9 @@ print('Rows:', sample_text.count(), ' columns ', len(sample_text.columns))
 
 
 
-print("Writinig file in given folder and saving as '")
+print("Writinig file in given folder and saving with sep as tab'")
 sample_text.write.mode('overwrite').csv(path='./Output/user_text_overwritten', header='True', sep= '\t')
-print("Writing | seperated txt File")
+print("Writing file in given folder and saving it with sep = | ")
 sample_text.write.mode('overwrite').csv(path='./Output/user_text1_overwritten', header='True', sep= '|')
 
 
